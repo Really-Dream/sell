@@ -12,11 +12,12 @@ import java.util.List;
 @Data
 public class ResultVO {
 
+
     private Integer code;
 
     private String msg;
 
     @JsonProperty("data")
-    private List<ProductVO> productVOList;
+    private Object data;
 
 }

@@ -3,21 +3,21 @@ package com.imooc.sell.enums;
 import lombok.Getter;
 
 /**
- * Created By Dream
- * 2017/11/7 23:54
+ * Created by Dream on 2017/11/15.
  */
 @Getter
-public enum ProductStatusEnum implements CodeEnum{
+public enum PayStatusEnum implements CodeEnum{
 
-    UP(0,"在架"),
-    DOWN(1,"下架")
+    WAIT(0, "等待支付"),
+    SUCCESS(1, "支付成功"),
+
     ;
 
     private Integer code;
 
     private String message;
 
-    ProductStatusEnum(Integer code,String message){
+    PayStatusEnum(Integer code, String message) {
         this.code = code;
         this.message = message;
     }

@@ -10,14 +10,13 @@ import java.util.List;
  * Created by Dream on 2017/11/10.
  */
 @Data
-public class ResultVO {
+public class ResultVO<T> {
 
 
     private Integer code;
 
     private String msg;
 
-    @JsonProperty("data")
-    private Object data;
+    private T data;
 
 }
